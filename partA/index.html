@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to City of Calgary datasets searching</title>
+    <script src="xmlfilehandler.js"></script>
+    <script src="school_jsonhandler.js"></script>
+    <script src="incidents_jsonhandler.js"></script>
+    <script src="crimes_jsonhandler.js"></script>
+    <script src="permits_jsonhandler.js"></script>
+    <script src="getDateObject.js"></script>
+    <link href="YYCdataset.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"><!--link google font-->
+</head>
+<body>
+<header>The City<Br>of Calgary<Br>Search<figure>
+    <img  src="photos/Logo.png" alt="logo" title="logo" ><!--Ref Web:https://www.amazon.com/Alberta-Calgary-Country-Photo-License/dp/B07GTSZ5P3  -->
+    <figcaption >
+    </figcaption></figure>
+</header>
+<div>
+    <h3>Today is: <span id="dtfield" ></span></h3>
+    <h3>Welcome to Calgary</h3>
+</div>
+<div>
+    <h2>Please choice type of dataset</h2>
+    <fieldset id = "datasetType">
+        <input type="button" id="incidents" value="Traffic Incidents" onclick="getIncidentsHtml()">
+        <input type="button" id="school" value="Schools in Communities" onclick="getSchoolHtml()">
+        <input type="button" id="crimes" value="Crime Stats" onclick="getCrimesHtml()">
+        <input type="button" id="permits" value="Building Permits" onclick="getPermitsHtml()">
+    </fieldset>
+</div>
+
+<div>
+    <h2><span id = "showDataset">Show data<br></span></h2>
+    <table id="searchresults1"></table>
+    <table id="searchresults2"></table>
+    <table id="searchresults3"></table>
+    <table id="searchresults4"></table>
+</div>
+
+
+
+
+</body>
+</html>

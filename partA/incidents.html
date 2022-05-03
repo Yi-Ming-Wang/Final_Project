@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calgary Traffic Incidents form</title>
+    <link href="YYCdataset.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div>
+<h2>Search on Calgary Traffic Incidents <br> on Information,Date<br> or count, ID</h2>
+<br>
+<table>
+    <tr><td>Information</td><td><input type="text" size="30" placeholder="Please enter the incidents info" id="incidentInfo"></td></tr>
+    <tr><td>Date</td><td><input type="text" size="30" placeholder="Please enter the date"  id="date"></td></tr>
+    <tr><td>Number of persons</td><td><input type="text" size="30" placeholder="Please enter number of persons" id="countPersons"></td></tr>
+    <tr><td>ID</td><td><input type="text" size="30" placeholder="Please enter the case's ID"  id="id"></td></tr>
+</table>
+</div>
+
+
+    <h3 id="searchvalue"></h3>
+    <br>
+    <table id="searchresults1"></table>
+
+
+
+<script async type="text/javascript" src="incidents_jsonhandler.js" ></script>
+</body>
+</html>

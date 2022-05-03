@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="JSONHandler.js"></script>
+    <title>Welcome to rental page</title>
+    <link href="rental.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"><!--link google font-->
+</head>
+<body>
+<div>
+  <h2>Start your search</h2>
+  <br>
+  <table>
+    <tr><td>Enter last Name of the client</td><td><input type="text" size="30" id="lastNameInput"></td></tr>
+  </table>
+</div>
+
+<div>
+  <h3>Client's List</h3>
+  <br>
+  <table id="searchresults"></table>
+</div>
+
+<div >
+    <fieldset id = "car_rental" disabled="true">
+    <form action="" onsubmit = "getRental() ; return false"  >
+        <table id = "showClient"></table>
+        <table>
+            <h3>Choice type of vehicles</h3><br>
+            <tr><td>
+            </td></tr><tr><td>
+            <input type="radio" id="compact" name="type" value=15 required><label>Compact $15/day</label>
+            <img src="photos/FIG_3.jpg" alt="compactCar" title="compactCar"><!--REF Web: https://www.reddit.com/user/parkmelisa2013/comments/oc3slk/best_car_detailing_service_in_edgemeade/ -->
+            </td></tr><tr><td>
+            <input type="radio" id="midSize" name="type" value=20 required><label>MidSize $20/day</label>
+            <img src="photos/FIG_4.png" alt="midSizeCar" title="midSizeCar"><!--REF Web: https://icon-library.com/tags/mid-size-car.html -->
+            </td></tr><tr><td>
+            <input type="radio" id="luxury" name="type" value=35 required><label>Luxury  $35/day</label>
+            <img src="photos/FIG_5.jpg" alt="luxuryCar" title="luxuryCar">
+            </td></tr><tr><td><!--REF Web: https://appadvice.com/game/app/lcds-luxury-car-driving-sim/1527914731-->
+            <input type="radio" id="van" name="type" value=40 required><label>Van,Trunk $40/day</label>
+            <img src="photos/FIG_6.jpeg" alt="vanCar" title="vanCar"><!--REF Web:https://www.redbus.in/tempo-traveller/-->
+             </td></tr>
+
+            <tr>
+                <td>
+                    <b>Option</b><br>
+                    <input type=checkbox id=rackValue name=rack value=5 ><label>Rack $5/day</label><br><br>
+                    <input type=checkbox id=gpsValue name=gps value=10 ><label>GPS $10</label><br><br>
+                    <input type=checkbox name=seat value=0 ><label>Child Seat Free</label><br><br>
+
+                    <b>Select rent days</b><br>
+                    <input type="Number" id="numDays" min="1" max="30" pattern="[0-9]{2}" required><label>Total Days</label><br><br>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Place your order" >
+    </form>
+    </fieldset>
+</div>
+
+<div>
+    <br>
+    <h2>Your Order Details</h2>
+    <table id = "showClientInfo"></table>
+    <h2><span id="result"></span></h2>
+</div>
+
+
+</body>
+</html>

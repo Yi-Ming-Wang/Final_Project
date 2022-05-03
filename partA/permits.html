@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calgary Building Permits form</title>
+    <link href="YYCdataset.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div>
+    <h2>Search on Calgary Building Permits <br> on Permit class,Number of unit <br> or Community, Address</h2>
+    <br>
+
+    <table>
+        <tr><td>Permit class</td><td><input type="text" size="30" placeholder="Please enter the permit's class" id="class"></td></tr>
+        <tr><td>Number of units</td><td><input type="text" size="30" placeholder="Please enter the number" id="num"></td></tr>
+        <tr><td>Permit Number</td><td><input type="text" size="30" placeholder="Please enter the permit" id="permitNum"></td></tr>
+        <tr><td>Address</td><td><input type="text" size="30" placeholder="Please enter the address" id="address"></td></tr>
+    </table>
+</div>
+
+    <h3 id="searchvalue"></h3>
+    <br>
+    <table id="searchresults4"></table>
+
+
+
+
+<script async type="text/javascript" src="permits_jsonhandler.js" ></script>
+</body>
+</html>

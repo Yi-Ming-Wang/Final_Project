@@ -1,0 +1,68 @@
+@media all
+{
+    body
+    {
+        background-color: rgba(222, 195, 235, 0.2);
+        z-index: -1;/* -1 means the image will place behind the content" */
+    }
+    body::after
+    {
+        background: url("photos/Logo.jpg") ;/*REF to Web: https://www.amazon.com/Life-Better-Java-Personalized-Customized/dp/1076902685/*/
+        position: fixed;
+        -webkit-background-size: cover; /*Different Vendor*/
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        content: "";
+        opacity: 0.5;
+        z-index: -1;/* -1 means the image will place behind the content" */
+
+    }
+
+    div{
+        width: 85%;
+        margin: 5% auto;
+        background: rgba(240, 224, 203, 0.5);
+        padding: 30px;
+
+    }
+    img
+    {
+        margin-top: 0.5%;
+        float:left;
+        width:120px;
+        height:110px;
+
+    }
+    header
+    {
+        margin-top: 5%;
+        margin-left: 10%;
+        font-size:80px;
+        color: rgba(23, 60, 115, 0.95);
+    }
+    h3
+    {
+        color: rgba(63, 38, 27, 0.95);
+        text-align: center;
+    }
+
+
+    input
+    {
+        background-color: rgba(173, 240, 182, 0.6);
+
+    }
+
+    h2
+    {
+        color: rgba(2, 2, 2, 0.45);
+        font-family: 'Staatliches', cursive;
+    }
+
+
+}

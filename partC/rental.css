@@ -1,0 +1,101 @@
+@media all
+{
+    body
+    {
+        background-color: rgba(222, 195, 235, 0.2);
+        z-index: -1;/* -1 means the image will place behind the content" */
+    }
+    body::after
+    {
+        background: url("photos/FIG_2.png") ;/*REF to Web: https://www.billboard-japan.com/d_news/image/77351/3*/
+        position: fixed;
+        -webkit-background-size: cover; /*Different Vendor*/
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+        content: "";
+        opacity: 0.5;
+        z-index: -1;/* -1 means the image will place behind the content" */
+
+    }
+
+    div{
+        width: 80%;
+        margin: 5% auto;
+        background: rgba(240, 224, 203, 0.5);
+        padding: 30px;
+        text-align: center;
+    }
+
+    header
+    {
+        margin-top: 5%;
+        margin-left: 10%;
+        font-size:80px;
+        color: rgba(23, 60, 115, 0.95);
+    }
+    h3
+    {
+        color: rgba(63, 38, 27, 0.95);
+    }
+    tr
+    {
+        vertical-align: top;
+    }
+    label,td
+    {
+        text-align: left;
+        font-size: 120%;
+    }
+
+    input
+    {
+        background-color: rgba(173, 240, 182, 0.6);
+    }
+
+    table
+    {
+        width: 600px;
+        margin: auto;
+    }
+    h2
+    {
+        color: rgba(2, 2, 2, 0.45);
+        font-family: 'Staatliches', cursive;
+    }
+    b
+    {
+        color: rgba(2, 2, 2, 0.45);
+        font-family: 'Staatliches', cursive;
+        text-align: left;
+    }
+
+
+    img{
+        max-height:45px;
+        min-width:80px;
+        float:right;
+
+    }
+
+   img:hover
+    {
+
+        width: 15%;
+        height: 15%;
+        transition: width 3s, height 3s, transform 3s;
+
+    }
+    /*.thumbnail:hover {
+        position:relative;
+        width:150px;
+        height:100px;
+        display:block;
+
+    }
+   */
+}
